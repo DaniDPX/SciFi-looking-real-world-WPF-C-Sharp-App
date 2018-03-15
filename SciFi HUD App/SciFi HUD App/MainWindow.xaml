@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SciFi_HUD_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="597.86" Width="854.572" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}">
-    <Grid>
-        <Image Margin="118.518,10,98.054,30.86" Source="HUD_Background.png" Stretch="Fill"/>
+        Title="MainWindow" Height="485.36" Width="551.572" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}">
+    <Grid Height="488.36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="556.072">
+        <Image Margin="10,10,0,0" Source="HUD_Background.png" Stretch="Fill" Height="458.783" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="525.5"/>
 
     </Grid>
 </Window>
