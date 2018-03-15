@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="485.36" Width="551.572" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}">
     <Grid Margin="0,0,-4.5,-3">
-        <Image Margin="10,10,20.572,19.577" Source="HUD_Background.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
+        <Image x:Name="Background" Margin="10,10,20.572,19.577" Source="HUD_Background.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" MouseDown="drag_view"/>
         <Button Content="ተርሚናል" HorizontalAlignment="Left" Margin="334.732,213.856,0,0" VerticalAlignment="Top" Width="114.855" RenderTransformOrigin="0.5,0.5" Height="30.567" BorderBrush="#FF018AF3" Background="{x:Null}" Foreground="#FF45AEFF">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -21,7 +21,7 @@
         </Button>
 
         <Image gif:ImageBehavior.RepeatBehavior="0x"
-               gif:ImageBehavior.AnimatedSource="earth-spinning-rotating-animation-40.gif" Height="216.987" VerticalAlignment="Top" HorizontalAlignment="Left" Width="247.072" Margin="83,216.948,0,0" />
+               gif:ImageBehavior.AnimatedSource="globe-earth-animation-15.gif" Height="216.987" VerticalAlignment="Top" HorizontalAlignment="Left" Width="247.072" Margin="67,217.948,0,0" />
 
     </Grid>
 </Window>

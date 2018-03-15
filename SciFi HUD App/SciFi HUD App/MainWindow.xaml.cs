@@ -24,5 +24,10 @@ namespace SciFi_HUD_App
         {
             InitializeComponent();
         }
+
+        private void drag_view(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }

@@ -102,5 +102,8 @@
   <ItemGroup>
     <Resource Include="earth-spinning-rotating-animation-40.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="globe-earth-animation-15.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
