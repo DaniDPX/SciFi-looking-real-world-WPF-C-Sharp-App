@@ -3,11 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:SciFi_HUD_App"
         mc:Ignorable="d"
         Title="MainWindow" Height="485.36" Width="551.572" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}">
-    <Grid Height="488.36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="556.072">
-        <Image Margin="10,10,0,0" Source="HUD_Background.png" Stretch="Fill" Height="458.783" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="525.5"/>
+    <Grid Margin="0,0,-4.5,-3">
+        <Image Margin="10,10,20.572,19.577" Source="HUD_Background.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="ተርሚናል" HorizontalAlignment="Left" Margin="334.732,213.856,0,0" VerticalAlignment="Top" Width="114.855" RenderTransformOrigin="0.5,0.5" Height="30.567" BorderBrush="#FF018AF3" Background="{x:Null}" Foreground="#FF45AEFF">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="45"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+        <Image gif:ImageBehavior.RepeatBehavior="0x"
+               gif:ImageBehavior.AnimatedSource="earth-spinning-rotating-animation-40.gif" Height="216.987" VerticalAlignment="Top" HorizontalAlignment="Left" Width="247.072" Margin="83,216.948,0,0" />
 
     </Grid>
 </Window>
