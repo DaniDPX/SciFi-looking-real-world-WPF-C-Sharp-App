@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,13 @@ namespace SciFi_HUD_App
         private void drag_view(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
+        }
+
+        private void OpenTerminal(object sender, RoutedEventArgs e)
+        {
+            ProcessStartInfo info = new ProcessStartInfo("cmd.exe");
+            info.Arguments = "/C";
+            Process.Start(info);
         }
     }
 }
