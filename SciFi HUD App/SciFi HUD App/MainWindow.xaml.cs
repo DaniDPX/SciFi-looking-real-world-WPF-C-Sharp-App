@@ -59,16 +59,26 @@ namespace SciFi_HUD_App
             this.DragMove();
         }
 
+        private void CloseHud(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void Minimize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void OpenBrowser(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://google.com");
+        }
+
         private void OpenTerminal(object sender, RoutedEventArgs e)
         {
             ProcessStartInfo info = new ProcessStartInfo("cmd.exe");
             Process.Start(info);
         }
 
-
-        private void WinLoad(object sender, RoutedEventArgs e)
-        {
-            
-        }
     }
 }
