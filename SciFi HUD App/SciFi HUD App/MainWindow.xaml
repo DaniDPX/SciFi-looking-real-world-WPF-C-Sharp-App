@@ -6,15 +6,15 @@
          xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:SciFi_HUD_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="485.36" Width="551.572" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}">
+        Title="MainWindow" Height="485.36" Width="551.572" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" Loaded="WinLoad">
     <Grid Margin="0,0,-4.5,-3">
         <Image x:Name="Background" Margin="10,10,20.572,19.577" Source="HUD_Background.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" MouseDown="drag_view"/>
-        <Button x:Name="cmd" Content="ተርሚናል" HorizontalAlignment="Left" Margin="334.732,213.856,0,0" VerticalAlignment="Top" Width="114.855" RenderTransformOrigin="0.5,0.5" Height="30.567" BorderBrush="#FF018AF3" Background="{x:Null}" Foreground="#FF45AEFF" Click="OpenTerminal">
+        <Button x:Name="cmd" Content="ተርሚናል" HorizontalAlignment="Left" Margin="321.616,244.106,0,0" VerticalAlignment="Top" Width="197.587" RenderTransformOrigin="0.5,0.5" Height="30.567" BorderBrush="#FF018AF3" Background="#FF08243A" Foreground="#FF45AEFF" Click="OpenTerminal">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="45"/>
+                    <RotateTransform Angle="46.636"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
@@ -22,6 +22,56 @@
 
         <Image gif:ImageBehavior.RepeatBehavior="0x"
                gif:ImageBehavior.AnimatedSource="globe-earth-animation-15.gif" Height="216.987" VerticalAlignment="Top" HorizontalAlignment="Left" Width="247.072" Margin="67,217.948,0,0" />
+        <Button x:Name="cmd_Copy" Content="አሳሽ" HorizontalAlignment="Left" Margin="282.704,279.622,0,0" VerticalAlignment="Top" Width="171.495" RenderTransformOrigin="0.5,0.5" Height="30.567" BorderBrush="#FF018AF3" Background="#FF092106" Foreground="#FF45AEFF" Click="OpenTerminal">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="46.636"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="ሜሞሪ" HorizontalAlignment="Left" Margin="134,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Foreground="Black" FontFamily="Roboto Medium" FontWeight="Bold">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="11.513"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="ሲፒዩ" HorizontalAlignment="Left" Margin="156.5,63.5,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Foreground="Black" FontFamily="Roboto Medium" FontWeight="Bold">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="17.216"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="RAM_Usage" Content="6GB" HorizontalAlignment="Left" Margin="149,141.5,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Foreground="#FFDC763C" FontFamily="Roboto Medium" FontWeight="Bold" FontSize="20">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15.764"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="CPU_Usage" Content="56%" HorizontalAlignment="Left" Margin="159,92.5,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Foreground="#FFDC763C" FontFamily="Roboto Medium" FontWeight="Bold" FontSize="20">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15.764"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
 
     </Grid>
 </Window>
